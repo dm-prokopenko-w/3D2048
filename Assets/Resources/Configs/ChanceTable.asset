@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3622e39d239314b4eb044fbdf49c5705, type: 3}
+  m_Name: ChanceTable
+  m_EditorClassIdentifier: 
+  entries:
+  - number: 2
+    configCube: {fileID: 11400000, guid: fbfb0b23657313f498c8881fee44435c, type: 2}
+    chance: 75
+  - number: 4
+    configCube: {fileID: 11400000, guid: 9ccca1f4edb15344095ec7a5db3340a1, type: 2}
+    chance: 25
+  - number: 8
+    configCube: {fileID: 11400000, guid: aa3f92f8fc4bc2546ba0ecf2300ca3cb, type: 2}
+    chance: 0
+  - number: 16
+    configCube: {fileID: 11400000, guid: fbce557bb5776ba43b2de33eb6e86e8d, type: 2}
+    chance: 0
+  - number: 32
+    configCube: {fileID: 11400000, guid: d7653bc920b207844bd258ae486dbe5a, type: 2}
+    chance: 0
+  - number: 64
+    configCube: {fileID: 11400000, guid: 266c564c68dc61a4fb7cee55326079da, type: 2}
+    chance: 0
+  - number: 128
+    configCube: {fileID: 11400000, guid: 116914e2b4ff7f04f9c06174042f727d, type: 2}
+    chance: 0
+  - number: 256
+    configCube: {fileID: 11400000, guid: 1ea440ec0eecee64a8aad45002f787b2, type: 2}
+    chance: 0
+  - number: 512
+    configCube: {fileID: 11400000, guid: d4f5c5ed7170b114c9b085dfc5ef4153, type: 2}
+    chance: 0
+  - number: 1024
+    configCube: {fileID: 11400000, guid: 5439ee905bd2e184489096c1b578031f, type: 2}
+    chance: 0
+  - number: 2048
+    configCube: {fileID: 11400000, guid: 0d4b5296d6c933143a29b19f55583f17, type: 2}
+    chance: 0
+  - number: 4096
+    configCube: {fileID: 11400000, guid: bbaddc9a12c8d774d9856f925ab24cca, type: 2}
+    chance: 0
