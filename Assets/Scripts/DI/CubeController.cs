@@ -8,6 +8,7 @@ public class CubeController : IStartable
 {
     [Inject] private TouchController _touchController;
     [Inject] private ChanceTable _chanceTable;
+    [Inject] private VFXController _vfxController;
     
     public UnityEvent<uint> OnUpdateCounter = new();
     
@@ -102,6 +103,7 @@ public class CubeController : IStartable
                 if (next != null && next.configCube != null)
                 {
                     var spawnCube = SpawnCube(next, cubeView.transform.position);
+                    _vfxController.Spawn("MergeCube", _currentCube.transform.position);
                     spawnCube.AddImpulse(Vector3.up, 10f, true);
                 }
 
@@ -128,6 +130,7 @@ public class CubeController : IStartable
     private void OnTouchEnd(PointerEventData eventData)
     {
         _currentCube.AddImpulse(_currentCube.transform.forward, 30f);
+        _vfxController.Spawn("SpawnCube", _currentCube.transform.position);
     }
     
     private void OnTouchMoved(PointerEventData eventData)
