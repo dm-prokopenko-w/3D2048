@@ -5,8 +5,7 @@ using UnityEngine;
 public class ChanceTable : ScriptableObject
 {
     [SerializeField] private List<ChanceEntry> entries = new List<ChanceEntry>();
-
-
+    
     public int GetTotalChance()
     {
         int total = 0;

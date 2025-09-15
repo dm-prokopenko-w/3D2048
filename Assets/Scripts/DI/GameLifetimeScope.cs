@@ -7,11 +7,10 @@ public class GameLifetimeScope : LifetimeScope
     protected override void Configure(IContainerBuilder builder)
     {
         builder.Register<TouchController>(Lifetime.Scoped).AsSelf();
-        builder.Register<CubeSpawner>(Lifetime.Singleton)
+        builder.Register<CubeController>(Lifetime.Singleton)
             .AsSelf()
             .As<IStartable>();
-        var chanceTable = Resources.Load<ChanceTable>("Configs/ChanceTable");
-        Debug  .LogError(chanceTable == null);
+        var chanceTable = Resources.Load<ChanceTable>(Constants.ChanceTablePath);
         builder.RegisterInstance(chanceTable).AsSelf();
     }
 }

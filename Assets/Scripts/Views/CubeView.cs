@@ -65,6 +65,7 @@ public class CubeView : MonoBehaviour
     
     private void OnCollisionEnter(Collision other)
     {
+        if(!other.collider.CompareTag(Constants.CubeTag)) return;
         _onTriggerEnter?.Invoke(this, other);
     }
 }
